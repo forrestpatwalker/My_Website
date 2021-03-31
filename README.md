@@ -2,7 +2,7 @@
 The purpose for this app is to serve as a portfolio for myself. Currently I have an about me section, a skills section that focuses on which programming languages I like to use, a work section where my past and future projects will be displayed, a contact form so anyone who wants to reach out me can, and a way to download my resume incase any potential recruiters/hiring managers are looking.
 
 # Major Functions
-[Here](https://github.com/foorast/My_Website/tree/main/my_website/templates/my_website) you will find all of the html files that make up the site. They all inherit from [base.html](https://github.com/foorast/My_Website/blob/main/my_website/templates/my_website/base.html) keeping the other files condensed to just the html code the differentiates the pages. 
+[Here](https://github.com/foorast/My_Website/tree/main/my_website/templates/my_website) you will find all of the html files that make up the site. They all inherit from [base.html](https://github.com/foorast/My_Website/blob/main/my_website/templates/my_website/base.html) keeping the other files condensed to just the html code that differentiates the pages. 
 
 All of the templates are individual pages with the [details.html](https://github.com/foorast/My_Website/blob/main/my_website/templates/my_website/details.html) being the only exception. By using a database filled with information about my past projects the details.html file is able to loop through each object within the database and display their content within this file. This allows the site to only need one details.html page that will cover all of my current and future projects. This is the primary reason for having a backend to the site.
 
