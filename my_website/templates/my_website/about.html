@@ -1,0 +1,30 @@
+{% extends 'my_website/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main class="l-main">
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <div id="gallery" class="about__img">
+                <img src="{% static 'my_website/img/Fam_h.jpg' %}" alt="">
+            </div>
+
+            <div>
+                <h2 class="about__subtitle">Hi, I'm Forrest.</h2>
+                <p class="about__text">
+                    I am a <i>Magna Cum Laude</i> graduate from the University of Massachusetts Lowell where I recieved my B.S. in Information Technology (focus Programming).
+                    <br><br>For me programming has always been fulfilling, even when it's frustrating, and that can be often. It's the triumphs over these moments that make it so wonderful though. There is no greater feeling than working your way through the good and the bad until you come out on top with a finished product that you contributed to.
+                    <br><br>I truly am a geek at heart after all. I spend my free times working on personal projects, reading and writing fantasy/scifi, playing D&D, really just about any sterotypical nerd stuff. However, I'm also very much a jock because of the +10 years I played Football and other team sports. Often I'll find myself coding my current project with the game on in the background. I guess I'm the weird combination of Geek and Jock.
+                    <br><br>Since I'm a new developer I hope to build upon my knowledge and gain expeirence and really fill out this site with accomplishments.
+                </p>
+                </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

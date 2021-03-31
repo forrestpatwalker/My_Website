@@ -1,0 +1,29 @@
+{% extends 'my_website/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main class="l-main">
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+            {% for project in projects %}
+                <div id="gallery" class="work__img">
+                    <a href="{% url 'my_website:project_details' project.pk %}">
+                        <img src="{% static project.image %}" alt="image thumbnail">
+                    </a>
+                    <br>
+                    <p>{{project.short_description}}</p>
+                    <br>
+                    <a href="{% url 'my_website:project_details' project.pk %}" class="button">Read more</a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+

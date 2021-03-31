@@ -1,0 +1,36 @@
+{% extends 'my_website/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main class="l-main">
+    <section class="details section" id="details">
+        <h2 class="section-title">Project Details</h2>
+        <div class="details__container bd-grid">
+            <div>
+                <h1 class="details_title">{{ project.title}}</h1>
+                <img src="{% static project.image %}" alt="project image">
+            </div>
+            <div>
+                <h2 class="details_title">Technologies</h2>
+                <br>
+                <p class="details_title">{{ project.technology}}</p>
+                <br>
+                <h2 class="details_title">GitHub</h2>
+                <br>
+                <div class="details_title">
+                    <a href="{{ project.github_link }}" class="button">Project GitHub</a>
+                </div>
+                <br><br>
+                <h2 class="details_title">Description</h2>
+                <br>
+                <p class="details_title">{{ project.long_description}}</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% endblock %}
+

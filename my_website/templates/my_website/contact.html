@@ -1,0 +1,31 @@
+{% extends 'my_website/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main class="l-main">
+    <?php if (!empty($msg)) {
+        echo "<h2>$msg</h2>";
+    } ?>
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+            <iframe name="votar" style="display: none;"></iframe>
+            <form method="POST" class="contact__form" name="contact" id="contact" action="{% static 'my_website/contactForm.php' %}" target="votar">
+                <input type="text" name="name" id="name" placeholder="Name" class="contact__input" required>
+
+                <input type="email" name="email" id="email" placeholder="Email" class="contact__input" required>
+
+                <textarea name="message" id="textarea" cols="0" rows="10" class="contact__input" required></textarea>
+
+                <input type="submit" value="Submit" class="contact__button button" name="submit" id="submit">
+                <input type="hidden" name="hidePageLoad" value="2">
+            </form>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
