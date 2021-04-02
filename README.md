@@ -21,7 +21,7 @@ All of the dependencies are found within the [static folder](https://github.com/
 
 You will also find the [folder img](https://github.com/foorast/My_Website/tree/main/my_website/static/my_website/img) that stores the images used throughout the site.
 
-Last you have the jQuery dependencies found within the [JS Folder](https://github.com/foorast/My_Website/tree/main/my_website/static/my_website/JS) These are primarily used to with the nav bar on the site and is how the dropdown contact portion of the navbar works.
+Last you have the jQuery dependencies found within the [JS Folder](https://github.com/foorast/My_Website/tree/main/my_website/static/my_website/JS) These are primarily used with the nav bar on the site and is how the dropdown contact portion of the navbar works.
 
 # Build/Deply Instructions
 1. In order to build an app like this one or modify the contents of this you are going to need the latest version of python found [here](https://www.python.org/downloads/).
